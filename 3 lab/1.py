@@ -35,7 +35,7 @@ input_field = browser.find_element(By.ID, "answer")
 input_field.send_keys(str(answer))  # Enter the calculated answer
 
 # Submitting the form
-submit_button = browser.find_element(By.CSS_SELECTOR, "button.submit")
+submit_button = browser.find_element(By.TAG_NAME, "button")
 submit_button.click()
 
 browser.quit()
